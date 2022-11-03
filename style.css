@@ -1,5 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .bodyContainer {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideIndicatorContainer {
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.slideIndicator {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slideIndicatorSelected {
+  background-color: black;
+}
+
+.imageFrame {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.imageSlidesDiv {
+  transition: all 0.7s ease-out;
+  position: absolute;
+  display: flex;
+  left: 0;
+}
+
+.imageFrame img {
+  width: 800px;
+  object-fit: contain;
+}
+
+.arrowIcon {
+  width: 50px;
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.arrowIcon:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
 }
